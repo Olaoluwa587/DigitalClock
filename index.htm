@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CLOCK</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="clock">
+    <div class="title1">
+        DIGITAL CLOCK
+    </div>
+    <div class="clockface">
+        <div class="time-name">TIME:-</div>
+        <div class="hrstime" id="hrstime">00</div>
+            <div class="blink">:</div>
+        <div class="mintime" id="mintime">00</div>
+             <div class="blink">:</div>
+        <div class="sectime" id="sectime">00</div>
+    </div>
+<div class="stopwatch-name">STOPWATCH</div>
+    <div class="stopwatch-face">
+        <div class="headings">
+            <div class="hour">H</div>
+            <div class="time"  id="hour">00</div>
+        </div>
+        <div class="headings">
+            <div class="minute">M</div>
+            <div class="time"  id="minute">00</div>
+        </div>        
+        <div class="headings">
+            <div class="second">S</div>
+            <div class="time"  id="second">00</div>
+        </div>
+        <div class="headings">
+            <div class="milisecond">MS</div>
+            <div class="time"  id="milisecond">00</div>
+        </div>
+    </div>
+<div class="buttons">
+    <button id="start" type="button" onclick="commence()" name="start" class="start-button">Start</button>
+    <button id="stop" type="button" onclick="stoptime()" name="stop" class="stop-button">Stop</button>
+    <button id="reset" type="button" onclick="location.reload()" name="reset" class="reset-button">Reset</button>
+</div>
+</div>
+</body>
+</html>
