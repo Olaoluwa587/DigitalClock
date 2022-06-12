@@ -14,6 +14,8 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     letter-spacing:2px;
+    margin-top:1rem;
+    font-family:"fantasy";
 }
 .clock{
     position:absolute;
@@ -23,8 +25,8 @@ body{
     font-size:50px;
     background:white;
     border-radius: 10px;
-    width: 50%;
-    height: 70vh;
+    width: max-content;
+    height: max-content;
 }
 .time-name{
     margin-right: 120px;
@@ -40,9 +42,20 @@ body{
     background:#1212;
     width: 100%;
     color: crimson;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     letter-spacing:5px
+}
+.date{
+    display: flex;
+    font-size: 50px;
+    justify-content: space-around;
+    align-items:center;
+    color: orangered;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    /* word-spacing: 10px; */
 }
 .stopwatch-face{
     display: flex;
@@ -76,11 +89,12 @@ body{
     background:none;
     cursor: pointer;
     opacity: 0.5;
-    color:red;
+    color:green;
     font-weight:900;
 }
 .buttons > button:hover{
     opacity: 1;
+    color:red;
     font-size:25px
 }
 .buttons > button:active{

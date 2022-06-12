@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIGITAL CLOCK</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
@@ -20,6 +21,9 @@
         <div class="mintime" id="mintime">00</div>
              <div class="blink">:</div>
         <div class="sectime" id="sectime">00</div>
+    </div>
+    <div class="date" id="date">
+
     </div>
 <div class="stopwatch-name">STOPWATCH</div>
     <div class="stopwatch-face">
@@ -46,5 +50,9 @@
     <button id="reset" type="button" onclick="location.reload()" name="reset" class="reset-button">Reset</button>
 </div>
 </div>
+<script>
+    var d = new Date();
+var element = document.getElementById("date").innerHTML = d.toDateString();
+</script>
 </body>
 </html>

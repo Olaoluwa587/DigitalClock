@@ -1,4 +1,4 @@
-    setInterval(() => {
+setInterval(() => {
         var d = new Date();
             document.getElementById("hrstime").innerHTML = d.getHours();
             document.getElementById("mintime").innerHTML = d.getMinutes();
@@ -40,3 +40,6 @@
         function stoptime(){
             clearInterval(countime);
         }
+
+        var k = new Date();
+    document.getElementById("date").innerHTML=k.getFullYear();
