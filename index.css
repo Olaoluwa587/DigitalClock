@@ -42,8 +42,8 @@ body{
     background:#1212;
     width: 100%;
     color: crimson;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     letter-spacing:5px
 }
 .date{
@@ -109,6 +109,9 @@ body{
         height: 100%;
         font-weight:normal;
         background-color:lightblue;
+    }
+    .date{
+        font-size:15px;
     }
     .clockface{
         margin-top: 0.75rem;
